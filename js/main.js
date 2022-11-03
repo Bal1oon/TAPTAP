@@ -128,7 +128,7 @@ class App {
         if (this.monster) {
             this.count += 1;
             const clampNumber = (num, min, max) => Math.max(Math.min(num, Math.max(min, max)), Math.min(min, max));
-            this.maximum = 2200;
+            this.maximum = 2500;
             this.minimum = 1000;
             this.countEnd = this.monster.hit*100*0.75
             
