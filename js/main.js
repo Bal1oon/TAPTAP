@@ -260,8 +260,8 @@ class Hero {
 
 
     constructor(modelPath, onModelLoaded, type) {
-        const fbxLoader = new GLTFLoader();
-        fbxLoader.load(modelPath, (gltf) => {
+        const gltfLoader = new GLTFLoader();
+        gltfLoader.load(modelPath, (gltf) => {
             this.model = new THREE.Object3D();
             this.model.add(gltf.scene);
 
